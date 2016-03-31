@@ -1,0 +1,176 @@
+#destaque-parceiros,
+#destaque-produtos {
+    padding: 20px 0px;
+    margin: 30px 0px;
+}
+
+#destaque-parceiros {
+    .destaque-title {
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .see-more {
+        color: #0054A5;
+        text-decoration: none;
+        font-weight: lighter;
+        text-transform: uppercase;      
+        font-size: 12px;
+        &:hover {
+            font-size:14px;
+            font-weight:bold;
+        }
+    }
+}
+
+
+#destaque-promocoes {
+    .destaque-title {
+        position:relative;
+        display: inline-block;
+        padding: 0px 120px 10px 120px;
+        margin: 60px auto 60px auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal; 
+
+        &:after, &:before {
+            content: '';
+            position:absolute;
+            display: block;
+            width: 48%;
+            border-bottom: 1px solid #ccc;
+            bottom: 0px;
+        }
+
+        &:after {
+            right: 0px;
+        }
+
+
+        &:before {
+            left: 0px;
+        }
+    }
+}
+
+#destaque-produtos {
+    background: #CCC;
+    .destaque-title {
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (width >= $screen-sm-max ) and (width < $screen-lg-max) {
+        .destaque_produto-item {
+            lost-column: 1/6 6 0px no-flex;
+        }
+    }
+
+    @media screen and (width < $screen-sm-max) {
+        .destaque_produto-item {
+            lost-column: 1/2 2 0px no-flex;
+        }
+    }
+
+    .destaque_produto-item {
+        lost-column: 1/6 6 0px no-flex;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+
+        &:hover .overbox { 
+            opacity: 1; 
+        }
+
+        &:hover, &:hover .destaque_produto-item__titulo {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        &:hover .title,
+        &:focus .title {
+            opacity: 1;
+            transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+        }
+
+        & .tagline {
+            font-size: 0.8em;
+            opacity: 0;
+            transition-delay: 0.2s;
+            transition-duration: 0.2s;
+        }
+
+        &:hover .tagline,
+        &:focus .tagline {
+            opacity: 1;
+            transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+        }
+
+        .destaque_produto-item__image {
+            display: block;
+            background: no-repeat center center;
+            background-size: cover;
+            height: 250px;
+            width: 100%;
+            left: 0;
+            transition: all 300ms ease-out;
+        }
+
+        .overbox {
+            background-color: rgba(237,28,36, 0.58);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            z-index: 100;
+            transition: all 300ms ease-out;
+            opacity: 0;
+            width: 100%;
+            height: 250px;
+            padding: 125px 20px;
+        }
+
+        .overtext {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            transform: translateY(40px);
+            -webkit-transform: translateY(40px);
+        }
+
+        .title {
+            font-size: 18px;
+            text-transform: uppercase;
+            opacity: 0;
+            transition-delay: 0.1s;
+            transition-duration: 0.2s;
+            text-align: center;
+            border:2px solid $white;
+        }
+
+
+
+        .destaque_produto-item__titulo {
+            font-size: 14px;
+            text-align: center;
+            color: #333;
+        }
+    }
+}
+

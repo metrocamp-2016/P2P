@@ -1,0 +1,14 @@
+@import "global/all";
+
+
+@import "layouts/pagination";
+@import "layouts/effects";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/container";
+@import "layouts/parceiros";
+@import "layouts/produtos";
+@import "layouts/promocoes";
+@import "layouts/destaques";
+@import "layouts/localizacao";
+

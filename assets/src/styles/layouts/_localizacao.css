@@ -1,0 +1,256 @@
+.info_localizacao__wrapper {
+    background: $yellow;
+    padding:20px 0px;
+}
+
+.contact-maps-row {
+    overflow: hidden;
+}
+
+#map_contact {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+#map_contact #map-btn-tab {
+    position: relative;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.map-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+
+    .map-body {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .map-body #map {
+        position: absolute !important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+#map-btn {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    font-size: 50px;
+    padding: 40px 28px 40px 18px;
+    top: 50%;
+    left: -46px;
+    margin-top: -30px;
+    text-decoration: none;
+    background-color: #fff;
+    &:hover,
+    &:focus {
+        background-color: #fff;
+    }
+    &.active {
+        background-color: #fff;
+    }
+    i {
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+}
+
+.contact-maps-box {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.contact-maps-box .btn {
+    width: 100%;
+    margin: 0px 0px;
+}
+.contact-maps-box .btn:hover,
+.contact-maps-box .btn:focus {
+    color: #fff;
+}
+.contact-maps-box form {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.contact-maps-box form p {
+    float: none;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#map_contact {
+    height: 500px;
+    padding: 0px;
+}
+
+.gm-style-iw {
+    display: block;
+    width: 300px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 1px solid #ccc;
+    border-radius: 2px 2px 10px 10px;
+}
+
+.gm-style-iw > div{
+    max-width:100% !important;
+}
+
+#iw-container {
+    margin-bottom: 10px;
+    /*width: 100%;*/
+    width: 298px !important;
+}
+
+#iw-container p {
+    text-align:left;
+}
+
+#iw-container .iw-title {
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 10px;
+    background-color: #f1c40f;
+    color: #FFF;
+    margin: 0;
+    border-radius: 2px 2px 0 0;
+}
+#iw-container .iw-content {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 15px 5px 20px 15px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;	
+}
+.iw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.iw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+@media only screen and (width <= 768px) {
+    #map_contact {
+        height: 250px;
+    }
+}
+
+
+.vcard {
+    text-align: center;
+    max-width: 500px;
+    margin:0px auto;
+    line-height: 140%;
+
+    .vcard__address {
+        h2 {
+            position:relative;
+            display: inline-block;
+            color: #333;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+
+            font-size: 18px;
+            font-weight: bold; 
+
+            &:after, &:before {
+                content: '';
+                position:absolute;
+                display: block;
+                width: 45%;
+                border-bottom: 1px solid #333;
+                bottom: 0px;
+            }
+
+            &:after {
+                right: 0px;
+            }
+
+
+            &:before {
+                left: 0px;
+            }
+        }
+
+        a {
+            color : #7D7896;
+            font-weight: normal;
+            cursor: pointer;
+        }
+    }
+
+    .vcard__telefones {
+        list-style: none;
+        font-size: 30px;
+        font-weight: bold;
+        display:inline-block;
+        margin: 20px 0px 0px -35px;
+        color: #ed1c24;
+
+        li {
+            margin-bottom: 10px ;      
+        }
+
+        .fa {
+            border-radius: 50%;
+            font-size: 20px;
+            width: 28px;
+            height: 28px;
+            border: 2px solid #ed1c24;
+            padding: 2px 4px;
+            margin-right: 5px;
+        }
+
+        .fa.fa-whatsapp {
+            border: none;
+            padding: 0px;
+            border-radius: 0px;
+            font-size: 32px;
+            margin-top: -3px;
+            float: left;
+            color: #ed1c24;
+        }
+    }
+}
