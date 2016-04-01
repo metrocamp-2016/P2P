@@ -2,174 +2,223 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html>
+    <html>
     <head>    
-        <!-- TITLE OF SITE --> 
-        <title>Arduino Car</title>
-        <meta charset="utf-8">
+    <!-- TITLE OF SITE --> 
+    <title>Arduino Car</title>
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-	
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700|Orbitron:400,500,700' rel='stylesheet' type='text/css'>       <!--   FAV AND TOUCH ICONS   -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' >
-        <script src="assets/dist/vendors/html5shiv.js"></script>
-        <link rel="stylesheet" href="assets/dist/styles/main.css" />
-        <link rel="stylesheet" href="assets/dist/vendors/vendor.css" />
-</head>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-<body>
-<div class="sb-site">
-    <header id="header">
-        <section id="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-                        <h2 class="header_title_store">Carrinho Arduino</h2> 
-                    </div>
-                    <div class="col-xs-6 col-sm-9">
-                        <div class="sb-toggle-left">
-                            <div class="navicon-line"></div>
-                            <div class="navicon-line"></div>
-                            <div class="navicon-line"></div>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700|Orbitron:400,500,700' rel='stylesheet' type='text/css'>       <!--   FAV AND TOUCH ICONS   -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' >
+    <script src="assets/dist/vendors/html5shiv.js"></script>
+    <link rel="stylesheet" href="assets/dist/styles/main.css" />
+    <link rel="stylesheet" href="assets/dist/vendors/vendor.css" />
+    </head>
+
+    <body>
+        <div class="sb-site">
+            <a href="#top" class="go-back-top"></a>
+            <a name="top"></a>
+            <header id="header">
+                <section id="header__top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                <h2 class="header_title_store">Carrinho Arduino</h2> 
+                            </div>
+                            <div class="col-xs-6 col-sm-9">
+                                <div class="sb-toggle-left">
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                    <div class="navicon-line"></div>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="#projeto">Projeto</a></li>
+                                    <li><a href="#objetivo">Objetivo</a></li>
+                                    <li><a href="#cronograma">Cronograma</a></li>
+                                    <li><a href="https://github.com/metrocamp-2016/arduino-car/tree/master" target="__blank">Repositório</a></li>
+                                    <li><a href="#autores">Autores</a></li>
+                                </ul>
+                            </div>
+
                         </div>
-                        <ul class="menu">
-                            <li><a href="#desenvolvimento">Desenvolvimento</a></li>
-                            <li><a href="#objetivo">Objetivo</a></li>
-                            <li><a href="#cronograma">Cronograma</a></li>
-                            <li><a href="#repositorio">Repositório</a></li>
-                            <li><a href="#autores">Autores</a></li>
-                        </ul>
                     </div>
+                </section>
+            </header>
 
-                </div>
-            </div>
-        </section>
-    </header>
-
-    <main id="main">
-         <section id="intruducao">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 style="font-family: 'Orbitron', sans-serif; text-align:center;">Arduino Car</h1>
-                        <center><img width="350" height="350" src="assets/dist/images/home_image.jpg" class="img-radius" /></center>
+            <main id="main">
+            <section id="intruducao">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 style="font-family: 'Orbitron', sans-serif; text-align:center;">Arduino Car</h1>
+                            <center><img width="350" height="350" src="assets/dist/images/home_image.jpg" class="img-radius" /></center>
+                        </div>
                     </div>
                 </div>
-            </div>
-         </section>
-        <section class="view-page">
-            <a name="desenvolvimento"></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
-                        <h2>Desenvolvimento</h2>
-                        <p>
-                            <br />
-                            <br />
-                            
-                        </p>
+            </section>
+            <section class="view-page">
+                <a name="projeto"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                            <h2>O Projeto</h2>
+
+                            <p>O projeto é basicamente um carrinho de controle remoto, onde toda parte mecânica do protótipo é feita com dois motores e uma plaquinha (onde ambos estão conectados ao arduino) que contem o sistema de uma ponte H de relés, um dos motores estará atrás e controlara a velocidade do veículo e a direção (para frente ou para trás), o outro motor será o eixo do veiculo, este fará com que o veiculo vire para direita, esquerda ou siga reto.</p>
+                            <center><img src="assets/dist/images/post1-2.png" width="300" /></center>
+                            <p>
+                            Para receber os comandos do usuário o veículo disporá de um sensor infravermelho conectado ao arduino, a parte que vai receber as instruções estará no veiculo e a outra parte no controle.
+                            Até o momento essa é ideia principal de TCD do nosso grupo, é importante destacar que no texto acima pode haver alguns erros que serão consertados até a data do PC4.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="ss-style view-page ss-style-doublediagonal">
-            <a name="objetivo"></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Objetivo</h2>
-                        <br />
-                        <br />
-                     </div>
+            </section>
+            <section class="ss-style view-page ss-style-doublediagonal">
+                <a name="objetivo"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>Objetivo</h2>
+                            <p>O objetivo desse projeto não é nada muito amplo, pois o grupo queria fazer algo que fosse divertido e que utilizava conceitos de arduino, então escolhemos um carrinho de controle remoto e definimos como objetivo principal para ele a diversão e possíveis competições em campeonatos.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="view-page">
-            <a name="cronograma"></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Cronograma</h2>
-                        <br />
-                        <p></p>
-                   </div>
-                </div>
-            </div>
-        </section>
-        <section class="ss-style view-page ss-style-doublediagonal">
-            <a name="autores"></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Autores</h2>
-                        <ul class="author">
-                            <li class="author__item">
-                                <img src="http://www.expo-web.org/theme/images/joe.jpg" class="img-radius"/>
-                                <h2 class="author__name">Shankar Nakai</h2>
-                                <a href="mailto:shankar.nakai@gmail.com">shankar.nakai@gmail.com</a>
-                                <div class="author__curso">Engenharia da Computação</div>
-                                <div class="author__ra">412.578.618-67</div>
-                            </li>
-                            <li class="author__item">
-                                <img src="http://www.expo-web.org/theme/images/joe.jpg" class="img-radius"/>
-                                <h2 class="author__name">Vinicios Gomes de Souza</h2>
-                                <a href="mailto:vinicius.gomes.souza@gmail.com">vinicius.gomes.souza@gmail.com</a>
-                                <div class="author__curso">Engenharia de Controle e Automação</div>
-                                <div class="author__ra">444.581.708-21</div>
-                            </li>
-                            <li class="author__item">
-                                <img src="http://www.expo-web.org/theme/images/joe.jpg" class="img-radius"/>
-                                <h2 class="author__name">Thiago Haas</h2>
-                                <a href="mailto:thiago-haas@hotmail.com">thiago-haas@hotmail.com</a>
-                                <div class="author__curso">Engenharia da Computação</div>
-                                <div class="author__ra">xxx.xxx.xxx-xx</div>
-                            </li>
-                        </ul>
-                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="view-page">
-            <a name="repositorio"></a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Repositório</h2>
-                        <br />
-                        <p>O menu destacado é referente a área ao lado do "Menu Principal" que está separada em alguns boxes.</p>
-                   </div>
-                </div>
-            </div>
-        </section>
+            </section>
+            <section class="view-page">
+                <a name="cronograma"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>Cronograma</h2>
+                            <ul class="tasks">
+                                <!-- BEGIN : TASK 1 -->
+                                <li class="task">
+                                        <h2 class="task__title">Formação dos grupos</h2>
+                                        <div class="task__header">  
+                                            <span class="task__status">
+                                                Concluído
+                                            </span>
 
+                                            <span class="task__date">
+                                                2ª de Março
+                                            </span>
+                                        </div>
+                                </li>
+                                <!-- END : TASK 1 -->
 
-    </main>
+                                <!-- BEGIN : TASK 2 -->
+                                <li class="task">
+                                        <h2 class="task__title">Escolhendo o Tema</h2>
+                                        <div class="task__header">  
+                                            <span class="task__status">
+                                                Concluído
+                                            </span>
 
-     <footer id="rodape">
-        <div class="container">
-            <div class="row">
-                <div class="col-ms-12 col-md-3">
-                   <h2>APC 2<h2>
+                                            <span class="task__date">
+                                                3ª de Março
+                                            </span>
+                                        </div>
+                                </li>
+                                <!-- END : TASK 2 -->
+
+                                <!-- BEGIN : TASK 3 -->
+                                <li class="task">
+                                        <h2 class="task__title">Portfólio</h2>
+                                        <div class="task__header">  
+                                            <span class="task__status">
+                                                Concluído
+                                            </span>
+
+                                            <span class="task__date">
+                                                4ª de Março
+                                            </span>
+                                        </div>
+                                </li>
+                                <!-- END : TASK 3 -->
+
+                                <!-- BEGIN : TASK 3 -->
+                                <li class="task deadline">
+                                        <h2 class="task__title">Apresentação</h2>
+                                        <div class="task__header">  
+                                            <span class="task__status">
+                                               Agora 
+                                            </span>
+
+                                            <span class="task__date">
+                                                1ª de Abril
+                                            </span>
+                                        </div>
+                                </li>
+                                <!-- END : TASK 3 -->
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>    
-    </footer>
-</div>
-<div class="sb-slidebar sb-left">
-        <ul class="menu">
-            <li><a href="#desenvolvimento">Desenvolvimento</a></li>
-            <li><a href="#objetivo">Objetivo</a></li>
-            <li><a href="#cronograma">Cronograma</a></li>
-            <li><a href="#repositorio">Repositório</a></li>
-            <li><a href="#autores">Autores</a></li>
-        </ul>
-</div>
+            </section>
+            <section class="ss-style view-page ss-style-doublediagonal">
+                <a name="autores"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>Autores</h2>
+                            <ul class="author">
+                                <li class="author__item">
+                                    <img src="assets/dist/images/shankar.jpg" class="img-radius"/>
+                                    <h2 class="author__name">Shankar Nakai</h2>
+                                    <a href="mailto:shankar.nakai@gmail.com">shankar.nakai@gmail.com</a>
+                                    <div class="author__curso">Engenharia da Computação</div>
+                                    <div class="author__ra">412.578.618-67</div>
+                                </li>
+                                <li class="author__item">
+                                    <img src="assets/dist/images/vini.jpg" class="img-radius"/>
+                                    <h2 class="author__name">Vinicios Gomes de Souza</h2>
+                                    <a href="mailto:vinicius.gomes.souza@gmail.com">vinicius.gomes.souza@gmail.com</a>
+                                    <div class="author__curso">Engenharia de Controle e Automação</div>
+                                    <div class="author__ra">444.581.708-21</div>
+                                </li>
+                                <li class="author__item">
+                                    <img src="assets/dist/images/tiago.jpg" class="img-radius"/>
+                                    <h2 class="author__name">Thiago Haas</h2>
+                                    <a href="mailto:thiago-haas@hotmail.com">thiago-haas@hotmail.com</a>
+                                    <div class="author__curso">Engenharia da Computação</div>
+                                    <div class="author__ra">xxx.xxx.xxx-xx</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
 
-<script src="assets/dist/vendors/vendor.js"></script>
-<script src="assets/dist/scripts/app.js"></script>
-</body>
-</html>
+            <footer id="rodape">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-ms-12 col-md-3">
+                            <h2>APC 2<h2>
+                        </div>
+                    </div>
+                </div>    
+            </footer>
+        </div>
+        <div class="sb-slidebar sb-left">
+            <ul class="menu">
+                <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="https://github.com/metrocamp-2016/arduino-car/tree/master">Repositório</a></li>
+                <li><a href="#autores">Autores</a></li>
+            </ul>
+        </div>
+
+        <script src="assets/dist/vendors/vendor.js"></script>
+        <script src="assets/dist/scripts/app.js"></script>
+    </body>
+    </html>

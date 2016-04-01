@@ -126,6 +126,8 @@ section::after {
 .ss-style-doublediagonal {
 	z-index: 1;
 	padding-top: 6em;
+    padding-bottom: 6em;
+    margin-top: 80px;
 	background: #E67E22;
 }
 
