@@ -62,8 +62,8 @@ body{
 
 section {
 	position: relative;
-	padding: 80px 0px;
-	background: #ad5345;
+	padding: 40px 0px;
+	background: #E67E22;
 	color: #fff;
 }
 
@@ -126,7 +126,7 @@ section::after {
 .ss-style-doublediagonal {
 	z-index: 1;
 	padding-top: 6em;
-	background: #ad5345;
+	background: #E67E22;
 }
 
 .ss-style-doublediagonal::before,
@@ -145,7 +145,7 @@ section::after {
 
 .ss-style-doublediagonal::before {
 	height: 50%;
-	background: #894236;
+	background: #D35400;
 	-webkit-transform: rotate(-3deg);
 	transform: rotate(-3deg);
 	-webkit-transform-origin: 3% 0;
