@@ -4,14 +4,33 @@ header {
 }
 
 #header__top {
-    background: #00529d;
-    color: #fef200;
+    background: #00979c;
+    color: #FFF;
     min-height: 10px;
-    border-bottom: 4px solid $yellow;
+    border-bottom: 4px solid #008184;
     font-size: 12px;
     padding: 10px 0px;
     
-   
+    ul {
+        float:right;
+        display:inline-block;
+        margin:0px;
+        padding:0px;
+        li {
+            display:inline-block;
+            margin-right:10px;
+            &:last-child{
+                margin-right: 0px;
+            }
+
+            a {
+                display:block;
+                padding: 0px 10px;
+                color:#FFF;
+                text-transform:uppercase;
+            }
+        }
+    } 
 
     .header_title_store {
         font-size: 12px;
