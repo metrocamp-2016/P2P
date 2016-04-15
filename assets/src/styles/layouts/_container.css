@@ -19,6 +19,10 @@ body {
     z-index: 99999;
 }
 
+img {
+    max-width: 100%;
+}
+
 .tasks {
     margin:0px;
     padding:0px;
